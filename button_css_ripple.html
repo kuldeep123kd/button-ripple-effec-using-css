@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripple Effect Buttons</title>
+</head>
+<style>
+    /* Ripple effect */
+    .ripple-effect-css {
+        background-position: center;
+        transition: background 0.8s;
+    }
+    .ripple-effect-css:hover {
+        background: #47a7f5 
+        radial-gradient(circle, transparent 1%, 
+        #47a7f5 1%) center/15000%;
+    }
+    .ripple-effect-css:active {
+        background-color: #6eb9f7;
+        background-size: 100%;
+        transition: background 0s;
+    }
+
+    /* Button style */
+    .ripple-effect-css {
+        border: none;
+        border-radius: 2px;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: white;
+        background-color: #2196f3;
+        box-shadow: 0 0 4px #999;
+        outline: none;
+    }
+</style>
+<body>
+    <main>
+        <div style="min-height: 100vh;display: flex;align-items: center;justify-content: center;">
+            <!-- CSS Only -->
+            <button class="ripple-effect-css">Ripple Effect CSS</button>
+        </div>
+    </main>
+</body>
+<script>
+</script>
+</html>
